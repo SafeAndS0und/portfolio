@@ -1,68 +1,45 @@
 <template>
-  <section class="container">
-    <div>
-      <logo />
-      <h1 class="title">
-        portfolio
-      </h1>
-      <h2 class="subtitle">
-        Simple, aiming-to-be-pretty portfolio using Nuxt.js 
-      </h2>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green"
-        >Documentation</a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey"
-        >GitHub</a>
-      </div>
-    </div>
-  </section>
+   <div class="container">
+      <Navbar/>
+      <Left class="left" />
+      <Right class="right" />
+
+   </div>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
+   import Navbar from '../components/Navbar.vue'
+   import Right from '../components/Right.vue'
+   import Left from '../components/Left.vue'
 
-export default {
-  components: {
-    Logo
-  }
-}
+   export default {
+      components: {Navbar, Right, Left}
+   }
+
 </script>
 
-<style>
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
+<style scoped lang="scss">
+   .container{
+      position: relative;
 
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
+      .right{
+         position: absolute;
+         top: 0;
+         left: 50%;
+         width: 50%;
+         height: 100vh;
+         z-index: -1;
+      }
 
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
+      .left{
 
-.links {
-  padding-top: 15px;
-}
+         position: absolute;
+         top: 0;
+         right: 50%;
+         width: 50%;
+         height: 100vh;
+         z-index: -1;
+      }
+   }
+
 </style>
