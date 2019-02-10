@@ -30,8 +30,8 @@
       },
       methods:{
          changeFocus(){
+            this.$emit('activeStatusChanged') // let know the parent component that it should change their css
             this.isActive = !this.isActive
-
             this.color = this.isActive ? '#8a3036' : '#0f477f'
          }
       }
@@ -44,6 +44,7 @@
       position: relative;
       padding: 200px 0;
       transition: 0.5s;
+
 
       .content{
          margin: auto;

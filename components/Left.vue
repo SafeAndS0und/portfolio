@@ -29,8 +29,9 @@
       },
       methods:{
          changeFocus(){
+            this.$emit('activeStatusChanged') // let know the parent component that it should change their css
             this.isActive = !this.isActive
-            this.color = this.isActive ? '#3A3745' : '#0f477f'
+            this.color = this.isActive ? '#403d4b' : '#0f477f'
          }
       }
    }

@@ -1,19 +1,47 @@
 <template>
 
-   <nav>
+   <nav :style="{backgroundColor: YOffset >= 60 ? '#081e33' : 'transparent'}">
       <h1>nikodem lorenz</h1>
 
-      <Burger class="burger" />
+      <Burger class="burger" @click.native="toggleMenu" :showMenu="showMenu"/>
+
+      <transition name="fade">
+         <div class="menu" v-if="showMenu" @click.native="toggleMenu">
+            <nuxt-link to="#">About</nuxt-link>
+            <nuxt-link to="#">Contact</nuxt-link>
+         </div>
+      </transition>
+
 
    </nav>
 </template>
 
 <script>
    import Burger from '../assets/svg/Burger_icon.vue'
+
    export default {
       name: "navbar",
       components: {
          Burger
+      },
+      created(){
+         if (process.client) {
+            window.addEventListener('scroll', () => {
+               this.YOffset = window.pageYOffset
+            })
+         }
+
+      },
+      data(){
+         return {
+            showMenu: false,
+            YOffset: 0
+         }
+      },
+      methods: {
+         toggleMenu(){
+            this.showMenu = !this.showMenu
+         }
       }
    }
 
@@ -22,10 +50,14 @@
 <style scoped lang="scss">
 
    nav {
-      position: relative;
+      position: fixed;
+      top: 0;
       width: 100%;
       height: 70px;
-      background-color: transparent;
+      transition: 0.5s;
+      opacity: 0.95;
+
+
 
       h1 {
          margin: 0;
@@ -39,20 +71,45 @@
          font-size: 1.8em;
       }
 
-      .burger{
+      .burger {
          position: absolute;
-         top: 25px;
+         top: 26px;
          right: 50px;
          width: 45px;
+
          cursor: pointer;
 
-         fill: #cdc1c7;
+         fill: #e6dae0;
          transition: 200ms;
 
-         &:hover{
+         &:hover {
             fill: #ffffff;
          }
       }
+
+      .menu {
+         position: absolute;
+         top: 0;
+         right: 140px;
+         height: 100%;
+
+         a {
+            color: #c4c4c4;
+            padding: 16px;
+            line-height: 75px;
+            text-decoration: none;
+         }
+      }
+   }
+
+
+   /* Transitions */
+
+   .fade-enter-active, .fade-leave-active {
+      transition: opacity .25s;
+   }
+   .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+      opacity: 0;
    }
 
 </style>

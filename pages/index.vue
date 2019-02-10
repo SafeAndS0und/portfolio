@@ -1,8 +1,13 @@
 <template>
    <div class="container">
       <Navbar/>
-      <Left class="left" />
-      <Right class="right" />
+      <Left class="left"
+            :style="{position: isActiveLeft ? 'absolute': 'fixed'}"
+            @activeStatusChanged="isActiveLeft = !isActiveLeft" />
+      <Right class="right"
+             :style="{position: isActiveRight ? 'absolute': 'fixed'}"
+             @activeStatusChanged="isActiveRight = !isActiveRight"
+      />
 
    </div>
 </template>
@@ -13,7 +18,13 @@
    import Left from '../components/Left.vue'
 
    export default {
-      components: {Navbar, Right, Left}
+      components: {Navbar, Right, Left},
+      data(){
+         return {
+            isActiveLeft: false,
+            isActiveRight: false
+         }
+      }
    }
 
 </script>

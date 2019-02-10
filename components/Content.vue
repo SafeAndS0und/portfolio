@@ -4,14 +4,14 @@
        <h1>{{title}}</h1>
 
        <p
-          :class="{left: isLeft, right: !isLeft}"
+          :class="{left: isLeft, right: !isLeft, transparent: active}"
           :style="{borderLeftColor: color, borderRightColor: color}">
           {{description}}
        </p>
 
        <main-page-button class="big-butt-on"
                          :bg-color="color"
-                         @click.native="$emit('buttonClicked')"/>
+                         @click.native="btnClicked"/>
     </div>
 </template>
 
@@ -22,9 +22,20 @@
       name: "Content",
       props: ['title', 'description', 'position', 'color'],
       components: {MainPageButton},
+      data(){
+         return {
+            active: false
+         }
+      },
       computed:{
          isLeft(){
             return this.position !== 'after'
+         }
+      },
+      methods: {
+         btnClicked(){
+            this.active = !this.active
+            this.$emit('buttonClicked')
          }
       }
    }
@@ -33,6 +44,7 @@
 <style scoped lang="scss">
    .content{
       color: white;
+
 
       h1{
          text-align: center;
@@ -44,12 +56,17 @@
       }
 
       p{
+         background-color: #0a2643;
          position: relative;
          padding: 6vh 40px;
          font-size: .9em;
          color: #999ba1;
-         transition: 0.5s;
+         transition: 0.3s;
 
+      }
+
+      .transparent{
+         background-color: transparent;
       }
 
       .left{

@@ -1,5 +1,5 @@
 <template>
-   <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+   <svg version="1.1" :class="{active: showMenu}" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 313 151" style="enable-background:new 0 0 313 151;" xml:space="preserve">
          <g>
             <rect x="0.5" y="0.5" width="312" height="31"/>
@@ -18,10 +18,43 @@
 
 <script>
    export default {
-      name: "burger_Icon"
+      name: "burger_Icon",
+      props: ['showMenu'],
+      data(){
+         return {}
+      },
+      methods: {}
    }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
+   svg {
+      overflow: visible;
+      g {
+         transition: 0.25s;
 
+         rect {
+
+         }
+      }
+   }
+
+   .active {
+      transform-origin: center;
+      transform: rotate(90deg) scale(0.9) translateX(12px);
+
+      g{
+         transform-origin: center;
+      }
+
+      g:nth-child(1) {
+         transform: rotate(-45deg) translateX(-48px);
+      }
+      g:nth-child(2) {
+         opacity: 0;
+      }
+      g:nth-child(3) {
+         transform: rotate(45deg)  translateX(-48px);
+      }
+   }
 </style>
