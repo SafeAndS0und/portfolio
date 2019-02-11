@@ -33,23 +33,37 @@
    .container{
       position: relative;
 
+
+      &::-webkit-scrollbar {
+         width: 0 !important;
+      }
+
       .right{
+         padding-top: 200px;
          position: absolute;
          top: 0;
          left: 50%;
          width: 50%;
-         height: 100vh;
          z-index: -1;
+         overflow: scroll;
+
+         &::-webkit-scrollbar {
+            width: 0 !important;
+         }
       }
 
       .left{
-
+         padding-top: 200px;
          position: absolute;
          top: 0;
          right: 50%;
          width: 50%;
-         height: 100vh;
          z-index: -1;
+         overflow: scroll;
+
+         &::-webkit-scrollbar {
+            width: 0 !important;
+         }
       }
    }
 

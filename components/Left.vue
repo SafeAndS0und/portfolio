@@ -44,7 +44,6 @@
 
    .left {
       position: relative;
-      padding: 200px 0;
       transition: 0.5s;
 
       .content {

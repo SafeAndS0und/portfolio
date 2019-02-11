@@ -8,6 +8,16 @@
                position="after"
                @buttonClicked="changeFocus"
       />
+      <h2>asd</h2>
+      <h2>asd</h2>
+      <h2>asd</h2>
+      <h2>asd</h2>
+      <h2>asd</h2>
+      <h2>asd</h2>
+      <h2>asd</h2>
+      <h2>asd</h2>
+      <h2>asd</h2>
+      <h2>asd</h2>
    </section>
 </template>
 
@@ -42,7 +52,6 @@
 
    .right{
       position: relative;
-      padding: 200px 0;
       transition: 0.5s;
 
 

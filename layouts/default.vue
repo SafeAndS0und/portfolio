@@ -13,7 +13,13 @@
       font-size: 16px;
 
 
+      &::-webkit-scrollbar {
+         width: 0 !important;
+      }
+
       font-family: 'Bahnschrift', sans-serif;
+
    }
+
 
 </style>
