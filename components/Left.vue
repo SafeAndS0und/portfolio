@@ -7,15 +7,18 @@
                :color="color"
                @buttonClicked="changeFocus"
       />
+
+      <MusicContent v-if="isActive" class="music-content"/>
    </section>
 </template>
 
 <script>
    import Content from './Content'
+   import MusicContent from './Music/MusicContent'
 
    export default {
       name: "Left",
-      components: {Content},
+      components: {Content, MusicContent},
       data(){
          return {
             title: "Music",
@@ -45,6 +48,11 @@
       transition: 0.5s;
 
       .content {
+         margin: auto;
+         width: 85%;
+      }
+
+      .music-content{
          margin: auto;
          width: 85%;
       }

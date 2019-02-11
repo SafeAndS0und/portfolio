@@ -90,14 +90,37 @@
       .menu {
          position: absolute;
          top: 0;
-         right: 140px;
+         right: 110px;
          height: 100%;
 
          a {
             color: #c4c4c4;
-            padding: 16px;
+            margin: 0 8px;
+            padding: 8px 10px;
             line-height: 75px;
             text-decoration: none;
+            position: relative;
+
+            &:after{
+               content: '';
+               position: absolute;
+               top: 36px;
+               left: 0;
+               width: 0;
+               height: 2px;
+               background-color: #cbd3de;
+               color: #e2e2e2;
+               transition: 0.4s;
+
+            }
+
+            &:hover{
+               color: white;
+               &:after{
+                  width: 60%;
+               }
+
+            }
          }
       }
    }
