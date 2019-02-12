@@ -26,8 +26,8 @@
                         That's definitely my biggest interest, it always was.
                         Shifting through the different genres I am now inloved in classical piano music the most.
                         But before that I was also intrigued by many others types of music - from electronic to orchestral.`,
+            isActive: false,
             color: '#0f477f',
-            isActive: false
          }
       },
       methods:{
@@ -44,7 +44,7 @@
 
    .left {
       position: relative;
-      transition: 0.5s;
+      transition: background-color 0.5s;
 
       .content {
          margin: auto;
@@ -53,7 +53,7 @@
 
       .music-content{
          margin: auto;
-         width: 85%;
+         width: 100%;
       }
    }
 

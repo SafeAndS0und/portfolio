@@ -8,16 +8,18 @@
                position="after"
                @buttonClicked="changeFocus"
       />
-      <h2>asd</h2>
-      <h2>asd</h2>
-      <h2>asd</h2>
-      <h2>asd</h2>
-      <h2>asd</h2>
-      <h2>asd</h2>
-      <h2>asd</h2>
-      <h2>asd</h2>
-      <h2>asd</h2>
-      <h2>asd</h2>
+      <div v-if="isActive">
+         <h2>asd</h2>
+         <h2>asd</h2>
+         <h2>asd</h2>
+         <h2>asd</h2>
+         <h2>asd</h2>
+         <h2>asd</h2>
+         <h2>asd</h2>
+         <h2>asd</h2>
+         <h2>asd</h2>
+         <h2>asd</h2>
+      </div>
    </section>
 </template>
 
@@ -38,7 +40,7 @@
             isActive: false
          }
       },
-      methods:{
+      methods: {
          changeFocus(){
             this.$emit('activeStatusChanged') // let know the parent component that it should change their css
             this.isActive = !this.isActive
@@ -50,16 +52,16 @@
 
 <style scoped lang="scss">
 
-   .right{
+   .right {
       position: relative;
-      transition: 0.5s;
+      transition: background-color 0.5s;
 
-
-      .content{
+      .content {
          margin: auto;
          width: 85%;
       }
    }
+
    .active {
       background-color: #551D2B;
 

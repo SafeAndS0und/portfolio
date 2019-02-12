@@ -13,6 +13,7 @@
       font-size: 16px;
 
 
+
       &::-webkit-scrollbar {
          width: 0 !important;
       }
