@@ -1,19 +1,12 @@
 <template>
    <div class="container">
       <Navbar class="nav"/>
-      <div class="main" :style="{gridTemplateColumns: `${leftSpace}% ${rightSpace}%` }">
+      <div class="main">
          <Left class="left"
-               :style="{
-               position: isActiveLeft ? 'relative' : 'fixed',
-               width: isActiveLeft ? '100%' : leftSpace + '%'
-               }"
-               @activeStatusChanged="toggleLeft"/>
+                :class="{a_left: isActiveLeft, d_left: isActiveRight}"
+                @activeStatusChanged="toggleLeft"/>
          <Right class="right"
-                :style="{
-                position: isActiveRight ? 'relative' : 'fixed',
-                width: isActiveRight ? '100%' : rightSpace + '%',
-                left: isActiveRight && isActiveLeft ? '0' : leftSpace + 'vw'
-               }"
+                :class="{a_right: isActiveRight, d_right: isActiveLeft}"
                 @activeStatusChanged="toggleRight"
          />
       </div>
@@ -32,32 +25,17 @@
          return {
             isActiveLeft: false,
             isActiveRight: false,
-            rightSpace: 50,
-            leftSpace: 50
          }
       },
       methods: {
          toggleLeft(){
             this.isActiveLeft = !this.isActiveLeft
-            if(this.isActiveLeft){
-               this.leftSpace = 70
-               this.rightSpace = 30
-            } else{
-               this.leftSpace = 50
-               this.rightSpace = 50
-            }
+            this.isActiveRight = false
 
          },
          toggleRight(){
             this.isActiveRight = !this.isActiveRight
-            if(this.isActiveRight){
-               this.leftSpace = 30
-               this.rightSpace = 70
-            } else{
-               this.leftSpace = 50
-               this.rightSpace = 50
-            }
-
+            this.isActiveLeft = false
          }
       }
    }
@@ -82,20 +60,33 @@
          .right {
             padding-top: 20vh;
             z-index: 0;
-            grid-row: 1;
+            position: fixed;
+            left: 50vw;
+            width: 50%;
             overflow-y: scroll;
             transition: 0.6s;
 
             &::-webkit-scrollbar {
                width: 0 !important;
             }
+         }
 
+         .a_right{
+            position: relative;
+            width: 75%;
+            left: 25vw;
+         }
+
+         .d_right{
+            width: 25%;
+            left: 75vw;
          }
 
          .left {
+            position: fixed;
+            width: 50%;
             padding-top: 20vh;
             z-index: 0;
-            grid-row: 1;
             overflow-y: scroll;
             top: 0;
             left: 0;
@@ -105,6 +96,16 @@
                width: 0 !important;
             }
          }
+
+         .a_left{
+            position: relative;
+            width: 75%;
+         }
+
+         .d_left{
+            width: 25%;
+         }
+
       }
    }
 
