@@ -1,16 +1,18 @@
 <template>
    <div class="music-content">
-      <Videos class="videos"/>
-      <Socials class="socials"/>
+      <Videos />
+      <Mario />
+      <Soundcloud />
    </div>
 </template>
 
 <script>
-   import Socials from './Socials'
    import Videos from './Videos'
+   import Soundcloud from './Soundcloud'
+   import Mario from './Mario'
    export default {
       name: "MusicContent",
-      components: {Socials, Videos},
+      components: {Videos, Mario, Soundcloud},
 
    }
 </script>

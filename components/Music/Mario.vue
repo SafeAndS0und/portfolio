@@ -1,7 +1,7 @@
 <template>
-   <section class="videos">
+   <section class="mario">
       <h1 class="title">
-         My Youtube's piano channel
+         My arrangements on Marioverehrer's channel
       </h1>
       <p class="description">
          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -12,45 +12,44 @@
          Pellentesque sem diam, lacinia nec lectus ut, varius rhoncus velit.
          In sed libero vestibulum, malesuada ante ut, laoreet quam. Aenean ante ipsum, tristique vitae sapien ac, aliquam faucibus justo.
       </p>
+
       <div class="video">
          <iframe
-            src="https://www.youtube.com/embed/9NsZyFLf-vg" frameborder="0"
+            src="https://www.youtube.com/embed/YE9cxYd27Jw" frameborder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen>
          </iframe>
       </div>
       <div class="video">
-         <iframe src="https://www.youtube.com/embed/LkT1H1-I2yk"
+         <iframe src="https://www.youtube.com/embed/W7vKbP0RJt0"
                  frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                  allowfullscreen>
          </iframe>
       </div>
       <div class="video">
-         <iframe src="https://www.youtube.com/embed/o1JZtNP0x1M"
+         <iframe src="https://www.youtube.com/embed/781TZLu4pVM"
                  frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                  allowfullscreen>
          </iframe>
       </div>
 
       <v-icon name="brands/youtube" scale="5"
-              class="icon"/>
-
-
+              class="icon youtube"/>
    </section>
 </template>
 
 <script>
    export default {
-      name: "Videos"
+      name: "Mario"
    }
 </script>
 
 <style scoped lang="scss">
 
-   .videos {
+   .mario {
       width: 100%;
       padding: 40px 0 0 0;
-      background-color: #141414;
+      background-color: #1b1b1b;
 
       .title {
          text-align: center;
@@ -59,7 +58,6 @@
          text-transform: uppercase;
          letter-spacing: 1px;
       }
-
 
       .description{
          margin: 25px auto;
@@ -78,7 +76,7 @@
             height: 220px;
             margin: 15px auto;
             padding-left: 12px;
-            border-left: 6px solid #a00f0f
+            border-left: 6px solid #1659D7;
          }
       }
 
@@ -87,17 +85,17 @@
          margin: 35px 0 0 0;
          width: 100%;
          height: 80px;
-         color: #2d282a;
+         color: #72717a;
          transition: 0.35s;
          cursor: pointer;
          transform: translateY(5px);
       }
 
       .icon:hover {
-         color: #fff9f2;
-         background-color: #871b17;
+         color: #fff;
+         background-color: #1659D7;
       }
-
    }
+
 
 </style>

@@ -62,9 +62,10 @@
          background-color: #0a2643;
          position: relative;
          padding: 6vh 40px;
-         font-size: .9em;
+         font-size: .915em;
          color: #999ba1;
          transition: .3s;
+         font-weight: 300;
       }
 
       .arrow {
@@ -78,7 +79,7 @@
          cursor: pointer;
          transition: .3s;
 
-         &:hover{
+         &:hover {
             border-color: #ffffff;
             background-color: #161616;
             transform: scale(1.02);
@@ -99,9 +100,43 @@
       }
 
       .big-butt-on {
-
          display: block;
+         position: relative;
          margin: 14vh auto 0 auto;
+
+         &:hover{
+            background-color: transparent !important;
+         }
+
+         &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 2px;
+            width: 0;
+            background-color: #fff;
+            transition: 0.35s ease-in;
+         }
+
+         &:hover::before {
+            width: 100%;
+         }
+
+         &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            height: 2px;
+            width: 0;
+            background-color: #fff;
+            transition: 0.35s ease-in;
+         }
+
+         &:hover::after {
+            width: 100%;
+         }
       }
 
       @keyframes blink {
@@ -114,12 +149,10 @@
       }
    }
 
-
-
-
    .showArrow-enter-active, .showArrow-leave-active {
       transition: .5s;
    }
+
    .showArrow-enter, .showArrow-leave-to {
       transform: translateY(400px);
    }

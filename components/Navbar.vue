@@ -1,6 +1,6 @@
 <template>
 
-   <nav :style="{backgroundColor: YOffset >= 60 ? '#081e33' : 'transparent'}">
+   <nav :style="{backgroundColor: YOffset >= 60 ? '#151515' : 'transparent'}">
       <h1>nikodem lorenz</h1>
 
       <Burger class="burger" @click.native="toggleMenu" :showMenu="showMenu"/>
@@ -55,7 +55,7 @@
       width: 100%;
       height: 70px;
       transition: 0.5s;
-      opacity: 0.95;
+      opacity: 0.93;
 
 
 
@@ -94,10 +94,12 @@
          height: 100%;
 
          a {
-            color: #c4c4c4;
+            color: #cdcdcd;
             margin: 0 8px;
             padding: 8px 10px;
+            font-size: 15px;
             line-height: 75px;
+            letter-spacing: 2px;
             text-decoration: none;
             position: relative;
 
@@ -129,7 +131,7 @@
    /* Transitions */
 
    .fade-enter-active, .fade-leave-active {
-      transition: opacity .25s;
+      transition: opacity .35s;
    }
    .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
       opacity: 0;
