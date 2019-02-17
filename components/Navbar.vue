@@ -137,4 +137,19 @@
       opacity: 0;
    }
 
+   /* mobile */
+
+   @media only screen and (max-width: 900px) {
+      nav {
+
+         h1{
+            font-size: 1.3em;
+            padding: 6px 20px;
+         }
+
+         .burger{
+            right: 20px
+         }
+      }
+   }
 </style>

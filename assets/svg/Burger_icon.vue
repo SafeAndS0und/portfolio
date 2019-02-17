@@ -48,13 +48,13 @@
       }
 
       g:nth-child(1) {
-         transform: rotate(-45deg) translateX(-48px);
+         transform: rotate(-45deg) translateX(-51px);
       }
       g:nth-child(2) {
          opacity: 0;
       }
       g:nth-child(3) {
-         transform: rotate(45deg)  translateX(-48px);
+         transform: rotate(45deg)  translateX(-51px);
       }
    }
 </style>
