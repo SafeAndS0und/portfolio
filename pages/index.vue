@@ -80,6 +80,12 @@
          .d_right {
             width: 25%;
             left: 75vw;
+            opacity: 0.15;
+
+            &:hover{
+               opacity: 0.7;
+            }
+
          }
 
          .left {
@@ -104,6 +110,11 @@
 
          .d_left {
             width: 25%;
+            opacity: 0.15;
+
+            &:hover{
+               opacity: 0.7;
+            }
          }
 
       }
