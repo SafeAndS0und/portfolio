@@ -141,14 +141,32 @@
 
    @media only screen and (max-width: 900px) {
       nav {
+         position: absolute;
 
          h1{
-            font-size: 1.3em;
-            padding: 6px 20px;
+
+            font-size: 1.15em;
+            padding: 8px 20px;
          }
 
          .burger{
-            right: 20px
+            position: fixed;
+            transform: scale(0.7);
+            top: 32px;
+            right: 15px;
+         }
+
+         .menu{
+            position: fixed;
+            right: 5px;
+            top: 70px;
+
+            a{
+               display: block;
+               padding: 3px;
+               margin: 0;
+               line-height: 32px;
+            }
          }
       }
    }
