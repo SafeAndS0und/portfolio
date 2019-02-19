@@ -16,14 +16,17 @@
       padding: 32px 0;
       width: 100%;
       border: none;
-      color: #d2d6e5;
-      font-size: 18px;
-      letter-spacing: 4px;
+      color: #a7aab9;
+      font-size: 17px;
+      letter-spacing: 6px;
+      text-transform: uppercase;
       transition: 0.4s;
+      border-radius: 3px;
 
       &:focus, &:active{
          outline: none;
       }
+
    }
 
 </style>

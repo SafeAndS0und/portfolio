@@ -15,6 +15,7 @@
 </template>
 
 <script>
+   import EventBus from '../assets/js/EventBus'
    import Navbar from '../components/Navbar.vue'
    import Right from '../components/Right.vue'
    import Left from '../components/Left.vue'
@@ -32,10 +33,20 @@
             this.isActiveLeft = !this.isActiveLeft
             this.isActiveRight = false
 
+            EventBus.$emit('togglingSections', {
+               left: this.isActiveLeft,
+               right: false
+            })
+
          },
          toggleRight(){
             this.isActiveRight = !this.isActiveRight
             this.isActiveLeft = false
+
+            EventBus.$emit('togglingSections', {
+               left: false,
+               right: this.isActiveRight
+            })
          }
       }
    }
@@ -57,6 +68,10 @@
          display: grid;
          z-index: -44;
 
+         .deactivated {
+
+         }
+
          .right {
             padding-top: 20vh;
             z-index: 0;
@@ -69,6 +84,7 @@
             &::-webkit-scrollbar {
                width: 0 !important;
             }
+
          }
 
          .a_right {
@@ -80,9 +96,9 @@
          .d_right {
             width: 25%;
             left: 75vw;
-            opacity: 0.15;
+            opacity: 0.2;
 
-            &:hover{
+            &:hover {
                opacity: 0.7;
             }
 
@@ -101,6 +117,7 @@
             &::-webkit-scrollbar {
                width: 0 !important;
             }
+
          }
 
          .a_left {
@@ -110,9 +127,9 @@
 
          .d_left {
             width: 25%;
-            opacity: 0.15;
+            opacity: 0.2;
 
-            &:hover{
+            &:hover {
                opacity: 0.7;
             }
          }
@@ -128,13 +145,13 @@
          main {
 
             .right {
-               padding-top: 15vh;
+               padding-top: 20vh;
                z-index: 0;
-               position: fixed;
-               left: 50vw;
-               width: 50%;
-               overflow-y: scroll;
+               position: relative;
+               left: 0;
+               width: 100%;
                transition: 0.6s;
+               padding-bottom: 50px;
 
                &::-webkit-scrollbar {
                   width: 0 !important;
@@ -153,13 +170,10 @@
             }
 
             .left {
-               position: fixed;
-               width: 50%;
-               padding-top: 15vh;
+               position: relative;
+               padding-top: 25vh;
+               width: 100%;
                z-index: 0;
-               overflow-y: scroll;
-               top: 0;
-               left: 0;
                transition: 0.6s;
 
                &::-webkit-scrollbar {

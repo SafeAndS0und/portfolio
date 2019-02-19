@@ -19,6 +19,10 @@ module.exports = {
       ]
    },
 
+   manifest: {
+      theme_color: '#19191A'
+   },
+
    /*
    ** Customize the progress-bar color
    */

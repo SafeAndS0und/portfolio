@@ -10,6 +10,7 @@
       </p>
 
       <main-page-button class="big-butt-on"
+                        :class="{active: active}"
                         :bg-color="color"
                         @click.native="btnClicked"/>
 
@@ -21,16 +22,12 @@
 
 <script>
    import MainPageButton from './partials/MainPageButton'
+   import EventBus from '../assets/js/EventBus'
 
    export default {
       name: "Content",
-      props: ['title', 'description', 'position', 'color'],
+      props: ['active', 'title', 'description', 'position', 'color'],
       components: {MainPageButton},
-      data(){
-         return {
-            active: false
-         }
-      },
       computed: {
          isLeft(){
             return this.position !== 'after'
@@ -38,7 +35,6 @@
       },
       methods: {
          btnClicked(){
-            this.active = !this.active
             this.$emit('buttonClicked')
          }
       }
@@ -59,18 +55,18 @@
       }
 
       p {
-         background-color: #0a2643;
+         background-color: #1b1b1b;
          position: relative;
          padding: 6vh 40px;
          font-size: .915em;
-         color: #999ba1;
+         color: #b6b8be;
          transition: .3s;
          font-weight: 300;
       }
 
       .arrow {
          display: block;
-         margin: 4.5vh auto;
+         margin: 5vh auto 120px auto;
          padding: 16px;
          width: 30%;
          height: 25px;
@@ -104,8 +100,8 @@
          position: relative;
          margin: 14vh auto 0 auto;
 
-         &:hover{
-            background-color: transparent !important;
+         &:hover {
+            background-color: #282828 !important;
          }
 
          &::before {
@@ -119,10 +115,6 @@
             transition: 0.35s ease-in;
          }
 
-         &:hover::before {
-            width: 100%;
-         }
-
          &::after {
             content: '';
             position: absolute;
@@ -134,8 +126,17 @@
             transition: 0.35s ease-in;
          }
 
-         &:hover::after {
+      }
+
+      .active {
+         background-color: transparent !important;
+
+         &::after, &::before {
             width: 100%;
+         }
+
+         &:hover {
+            background-color: transparent !important;
          }
       }
 

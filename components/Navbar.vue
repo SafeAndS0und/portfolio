@@ -1,6 +1,6 @@
 <template>
 
-   <nav :style="{backgroundColor: YOffset >= 60 ? '#151515' : 'transparent'}">
+   <nav :style="{backgroundColor: YOffset >= 60 ? '#111111' : 'transparent'}">
       <h1>nikodem lorenz</h1>
 
       <Burger class="burger" @click.native="toggleMenu" :showMenu="showMenu"/>
@@ -55,7 +55,7 @@
       width: 100%;
       height: 70px;
       transition: 0.5s;
-      opacity: 0.93;
+      opacity: 0.94;
 
 
 
