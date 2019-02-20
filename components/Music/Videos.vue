@@ -46,6 +46,7 @@
 </script>
 
 <style scoped lang="scss">
+   @import '../../assets/css/variables';
 
    .videos {
       width: 100%;
@@ -100,4 +101,21 @@
 
    }
 
+
+   @media only screen and (max-width: $tablet) {
+      .videos {
+         box-sizing: border-box;
+         padding: 40px 6px 0 6px;
+
+         .description{
+            width: 80%;
+         }
+
+         .video {
+            iframe {
+               width: 85%;
+            }
+         }
+      }
+   }
 </style>

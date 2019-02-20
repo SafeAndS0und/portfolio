@@ -19,6 +19,7 @@
 <script>
    import Burger from '../assets/svg/Burger_icon.vue'
 
+
    export default {
       name: "navbar",
       components: {
@@ -48,6 +49,7 @@
 </script>
 
 <style scoped lang="scss">
+   @import '../assets/css/variables';
 
    nav {
       position: fixed;
@@ -139,7 +141,7 @@
 
    /* mobile */
 
-   @media only screen and (max-width: 900px) {
+   @media only screen and (max-width: $tablet) {
       nav {
          position: absolute;
 
@@ -158,14 +160,18 @@
 
          .menu{
             position: fixed;
-            right: 5px;
+            right: 7px;
             top: 70px;
 
             a{
+               color: white;
+               border-bottom: 1px solid #3d3d3d;
+               text-align: center;
                display: block;
-               padding: 3px;
+               padding: 6px;
                margin: 0;
                line-height: 32px;
+               font-weight: 300;
             }
          }
       }

@@ -10,7 +10,8 @@
          Duis pulvinar consequat ligula. Praesent vel tellus eu mi consequat ultricies.
          Curabitur pretium elit odio, a rhoncus massa convallis vitae.
          Pellentesque sem diam, lacinia nec lectus ut, varius rhoncus velit.
-         In sed libero vestibulum, malesuada ante ut, laoreet quam. Aenean ante ipsum, tristique vitae sapien ac, aliquam faucibus justo.
+         In sed libero vestibulum, malesuada ante ut, laoreet quam. Aenean ante ipsum, tristique vitae sapien ac,
+         aliquam faucibus justo.
       </p>
 
       <div class="video">
@@ -45,6 +46,7 @@
 </script>
 
 <style scoped lang="scss">
+   @import '../../assets/css/variables';
 
    .mario {
       width: 100%;
@@ -59,7 +61,7 @@
          letter-spacing: 1px;
       }
 
-      .description{
+      .description {
          margin: 25px auto;
          padding: 15px;
          width: 70%;
@@ -97,5 +99,22 @@
       }
    }
 
+   /* mobile */
 
+   @media only screen and (max-width: $tablet) {
+      .mario {
+         box-sizing: border-box;
+         padding: 40px 6px 0 6px;
+
+         .description{
+            width: 80%;
+         }
+
+         .video {
+            iframe {
+               width: 85%;
+            }
+         }
+      }
+   }
 </style>

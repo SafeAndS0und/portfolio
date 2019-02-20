@@ -15,6 +15,7 @@
 </template>
 
 <script>
+
    import EventBus from '../assets/js/EventBus'
    import Navbar from '../components/Navbar.vue'
    import Right from '../components/Right.vue'
@@ -54,6 +55,8 @@
 </script>
 
 <style scoped lang="scss">
+   @import '../assets/css/variables';
+
    .container {
 
       &::-webkit-scrollbar {
@@ -68,9 +71,6 @@
          display: grid;
          z-index: -44;
 
-         .deactivated {
-
-         }
 
          .right {
             padding-top: 20vh;
@@ -139,7 +139,7 @@
 
    /* mobile */
 
-   @media only screen and (max-width: 900px) {
+   @media only screen and (max-width: $tablet) {
       .container {
 
          main {

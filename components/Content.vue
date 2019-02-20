@@ -109,7 +109,7 @@
             position: absolute;
             top: 0;
             left: 0;
-            height: 2px;
+            height: 1px;
             width: 0;
             background-color: #fff;
             transition: 0.35s ease-in;
@@ -120,7 +120,7 @@
             position: absolute;
             bottom: 0;
             right: 0;
-            height: 2px;
+            height: 1px;
             width: 0;
             background-color: #fff;
             transition: 0.35s ease-in;
@@ -157,4 +157,5 @@
    .showArrow-enter, .showArrow-leave-to {
       transform: translateY(400px);
    }
+
 </style>

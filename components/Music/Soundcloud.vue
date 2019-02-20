@@ -40,6 +40,8 @@
 
 <style scoped lang="scss">
 
+   @import '../../assets/css/variables';
+
    .soundcloud {
       width: 100%;
       padding: 40px 0 0 0;
@@ -87,6 +89,21 @@
          background-color: #d73303;
       }
 
+   }
+
+   @media only screen and (max-width: $tablet) {
+      .soundcloud {
+         box-sizing: border-box;
+         padding: 40px 6px 0 6px;
+
+         .description {
+            width: 80%;
+         }
+
+         .piece {
+            width: 85%;
+         }
+      }
    }
 
 </style>

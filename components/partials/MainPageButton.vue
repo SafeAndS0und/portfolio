@@ -22,6 +22,7 @@
       text-transform: uppercase;
       transition: 0.4s;
       border-radius: 3px;
+      font-weight:500;
 
       &:focus, &:active{
          outline: none;

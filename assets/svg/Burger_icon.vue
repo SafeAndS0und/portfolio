@@ -57,4 +57,19 @@
          transform: rotate(45deg)  translateX(-51px);
       }
    }
+
+   @media only screen and (max-width: 900px) {
+      .active {
+
+         g:nth-child(1) {
+            transform: rotate(-45deg) translateX(-56px);
+         }
+         g:nth-child(2) {
+            opacity: 0;
+         }
+         g:nth-child(3) {
+            transform: rotate(45deg)  translateX(-56px);
+         }
+      }
+   }
 </style>
