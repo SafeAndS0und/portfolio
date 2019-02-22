@@ -13,7 +13,7 @@
          </article>
 
          <div class="popup" v-if="popupActive">
-            <div>CLOSE</div>
+            <div @click="popupActive = false">CLOSE</div>
             <img :src="popupSrc" alt="Image">
          </div>
 
@@ -42,10 +42,10 @@
 
 <style scoped lang="scss">
 
-   .project{
+   .project {
       padding: 40px 15px;
 
-      h1{
+      h1 {
          text-align: center;
          font-size: 1.35em;
          color: white;
@@ -53,7 +53,7 @@
          letter-spacing: 1px;
       }
 
-      p{
+      p {
          margin: 25px auto;
          width: 70%;
          display: block;
@@ -63,7 +63,7 @@
          padding: 15px;
       }
 
-      .bigImg{
+      .bigImg {
          display: block;
          margin: 0 auto;
          max-height: 500px;
@@ -73,7 +73,7 @@
          border-bottom: 1px solid #1a1a1a;
       }
 
-      .details{
+      .details {
          width: 100%;
          padding: 30px 10px;
          box-sizing: border-box;
@@ -81,9 +81,9 @@
          grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
          grid-gap: 10px;
 
-         article{
+         article {
 
-            img{
+            img {
                display: block;
                margin: auto;
                max-width: 100%;
@@ -94,14 +94,14 @@
                transition: 0.2s;
                opacity: 0.7;
 
-               &:hover{
+               &:hover {
                   opacity: 1;
                   transform: scale(1.2);
                   cursor: pointer;
                }
             }
 
-            p{
+            p {
                display: block;
                margin: 0 auto;
                width: 90%;
@@ -112,24 +112,32 @@
             }
          }
 
-         .popup{
+         .popup {
             position: fixed;
-            z-index: 12500;
+            z-index: 7;
             left: 50%;
             top: 50%;
             transform: translateX(-50%) translateY(-50%);
 
-            opacity: 0.9;
-            border: 10px solid white;
+            opacity: 0.99;
+            border-top: none;
 
-            div{
+            div {
                width: 100%;
-               height: 20px;
-               background-color: red;
+               height: 30px;
+               background-color: #390813;
+               text-align: center;
+               line-height: 30px;
+               cursor: pointer;
+               color: white;
+
+               &:hover{
+                  background-color: #560816;
+               }
             }
-            img{
-               max-width: 80vw;
-               max-height: 80vh;
+            img {
+               max-width: 70vw;
+               max-height: 70vh;
             }
 
          }
