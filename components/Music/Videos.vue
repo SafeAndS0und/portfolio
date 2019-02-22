@@ -10,7 +10,8 @@
          Duis pulvinar consequat ligula. Praesent vel tellus eu mi consequat ultricies.
          Curabitur pretium elit odio, a rhoncus massa convallis vitae.
          Pellentesque sem diam, lacinia nec lectus ut, varius rhoncus velit.
-         In sed libero vestibulum, malesuada ante ut, laoreet quam. Aenean ante ipsum, tristique vitae sapien ac, aliquam faucibus justo.
+         In sed libero vestibulum, malesuada ante ut, laoreet quam. Aenean ante ipsum, tristique vitae sapien ac,
+         aliquam faucibus justo.
       </p>
       <div class="video">
          <iframe
@@ -41,7 +42,17 @@
 
 <script>
    export default {
-      name: "Videos"
+      name: "Videos",
+      data(){
+         return {
+            active: false
+         }
+      },
+      methods: {
+         toggleActiveVideo(){
+            this.active = !this.active
+         }
+      }
    }
 </script>
 
@@ -61,8 +72,7 @@
          letter-spacing: 1px;
       }
 
-
-      .description{
+      .description {
          margin: 25px auto;
          padding: 15px;
          width: 70%;
@@ -73,6 +83,7 @@
       }
 
       .video {
+
          iframe {
             display: block;
             width: 75%;
@@ -101,13 +112,12 @@
 
    }
 
-
    @media only screen and (max-width: $tablet) {
       .videos {
          box-sizing: border-box;
          padding: 40px 6px 0 6px;
 
-         .description{
+         .description {
             width: 80%;
          }
 

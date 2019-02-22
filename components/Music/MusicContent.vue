@@ -10,6 +10,7 @@
    import Videos from './Videos'
    import Soundcloud from './Soundcloud'
    import Mario from './Mario'
+
    export default {
       name: "MusicContent",
       components: {Videos, Mario, Soundcloud},

@@ -55,7 +55,7 @@
       }
 
       p {
-         background-color: #1b1b1b;
+         background-color: #191919;
          position: relative;
          padding: 6vh 40px;
          font-size: .915em;
@@ -101,7 +101,7 @@
          margin: 14vh auto 0 auto;
 
          &:hover {
-            background-color: #282828 !important;
+            background-color: #1d1d1d !important;
          }
 
          &::before {
@@ -129,6 +129,7 @@
       }
 
       .active {
+         border: none !important;
          background-color: transparent !important;
 
          &::after, &::before {

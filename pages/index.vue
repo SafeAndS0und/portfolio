@@ -145,6 +145,7 @@
          main {
 
             .right {
+               overflow: visible;
                padding-top: 20vh;
                z-index: 0;
                position: relative;

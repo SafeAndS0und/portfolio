@@ -9,7 +9,7 @@
    body {
       margin: 0;
       padding: 0;
-      background-color: #19191A;
+      background-color: #161617;
       font-size: 16px;
 
 

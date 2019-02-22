@@ -9,47 +9,19 @@
                :active="isActive"
                @buttonClicked="changeFocus"
       />
-      <div v-if="isActive">
-         <br>
-         <br>
-         <br>
-         <br>
-         <br>
-         <br>
-         <br>
-         <br>
-         <br>
-         <br>
-         <br>
-         <br>
-         <br>
-         <br>
-         <br>
-         <br>
-         <br>
-         <br>
-         <br>
-         <br>
-         <br>
-         <br>
-         <br>
-         <br>
-         <br>
-         <br>
-         <br>
-         <br>
-         <br>
-      </div>
+
+      <programming-content v-if="isActive" class="programming-content"/>
    </section>
 </template>
 
 <script>
    import Content from './Content'
-   import EventBus from '../assets/js/EventBus';
+   import ProgrammingContent from './programming/ProgrammingContent'
+   import EventBus from '../assets/js/EventBus'
 
    export default {
       name: "Right",
-      components: {Content},
+      components: {Content, ProgrammingContent},
       mounted(){
          EventBus.$on('togglingSections', sectionStatus =>{
             sectionStatus.right
@@ -58,7 +30,7 @@
 
             sectionStatus.right
                ? this.color = '#8a3036'
-               : this.color = '#202020'
+               : this.color = '#1d1d1d'
          })
       },
       data(){
@@ -67,7 +39,7 @@
             description: `Music is awesome, but I would always like to keep it in the definiton of passion.
                         Programming is something different, something that I can call "work" and feel good about it.
                         Not that I don't enjoy it, but I like the distinction between programming and music.`,
-            color: '#202020',
+            color: '#1d1d1d',
 
             isActive: false
          }
@@ -90,6 +62,11 @@
       .content {
          margin: auto;
          width: 85%;
+      }
+
+      .programming-content{
+         margin: auto;
+         width: 100%;
       }
    }
 

@@ -1,5 +1,5 @@
 <template>
-    <button :style="{backgroundColor: bgColor}">Click for more</button>
+    <button :style="{borderColor: bgColor}">Click for more</button>
 </template>
 
 <script>
@@ -14,14 +14,15 @@
    button{
       cursor: pointer;
       padding: 32px 0;
+      border: 5px solid;
       width: 100%;
-      border: none;
+      background-color: transparent;
       color: #a7aab9;
       font-size: 17px;
       letter-spacing: 6px;
       text-transform: uppercase;
       transition: 0.4s;
-      border-radius: 3px;
+      border-radius: 1px;
       font-weight:500;
 
       &:focus, &:active{
