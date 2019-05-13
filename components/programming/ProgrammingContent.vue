@@ -19,7 +19,7 @@
                   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. ' +
                   'Proin nibh augue, suscipit a, scelerisque sed, lacinia in, mi. ' +
                   'Cras vel lorem. Etiam pellentesque aliquet tellus. Phasellus pharetra nulla ac diam. ',
-                  bigImg: 'https://cdn.business2community.com/wp-content/uploads/2017/09/Sales-Dashboard.png',
+                  bigImg: 'https://www.crm988.com/pic/pic2.PNG',
                   details: [
                      'https://www.speedtocontact.com/wp-content/uploads/2018/05/speed-to-contact-blog-what-is-crm-system.png',
                      'https://synergiuscrm.pl/wp-content/uploads/2017/03/CRM-proces-sprzeda%C5%BCy.-Elastyczny-CRM..png',

@@ -29,7 +29,7 @@
                : this.isActive = false
 
             sectionStatus.right
-               ? this.color = '#8a3036'
+               ? this.color = '#fff'
                : this.color = '#1d1d1d'
          })
       },
@@ -71,7 +71,8 @@
    }
 
    .active {
-      background-color: #551D2B;
+      background-color: #92182d;
+      //#551D2B
 
    }
 

@@ -62,7 +62,7 @@
    .videos {
       width: 100%;
       padding: 40px 0 0 0;
-      background-color: #141414;
+      background-color: #181818;
 
       .title {
          text-align: center;

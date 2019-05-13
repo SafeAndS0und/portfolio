@@ -1,7 +1,7 @@
 <template>
    <div class="music-content">
-      <Videos />
       <Mario />
+      <Videos />
       <Soundcloud />
    </div>
 </template>

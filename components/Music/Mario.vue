@@ -51,7 +51,7 @@
    .mario {
       width: 100%;
       padding: 40px 0 0 0;
-      background-color: #1b1b1b;
+      background-color: #141414;
 
       .title {
          text-align: center;

@@ -5,7 +5,10 @@
 
       <p
          :class="{left: isLeft, right: !isLeft, transparent: active}"
-         :style="{borderLeftColor: color, borderRightColor: color}">
+         :style="{
+            borderColor: color,
+            boxShadow: active ? '0 0 0 0 rgba(18, 18, 18, 0.75)' : '3px 3px 5px 0 rgba(18, 18, 18, 0.75)'}"
+      >
          {{description}}
       </p>
 
@@ -58,10 +61,11 @@
          background-color: #191919;
          position: relative;
          padding: 6vh 40px;
-         font-size: .915em;
-         color: #b6b8be;
+         font-size: .95em;
+         color: #d0d2d8;
          transition: .3s;
          font-weight: 300;
+         /*box-shadow: 3px 3px 5px 0 rgba(18, 18, 18, 0.75);*/
       }
 
       .arrow {
@@ -99,6 +103,8 @@
          display: block;
          position: relative;
          margin: 14vh auto 0 auto;
+         border-radius: 3px;
+         color: white;
 
          &:hover {
             background-color: #1d1d1d !important;
