@@ -165,7 +165,7 @@
 
             a{
                color: white;
-               border-bottom: 1px solid #3d3d3d;
+               /*border-bottom: 1px solid #ededed;*/
                text-align: center;
                display: block;
                padding: 6px;

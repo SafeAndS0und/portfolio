@@ -7,7 +7,7 @@
          :class="{left: isLeft, right: !isLeft, transparent: active}"
          :style="{
             borderColor: color,
-            boxShadow: active ? '0 0 0 0 rgba(18, 18, 18, 0.75)' : '3px 3px 5px 0 rgba(18, 18, 18, 0.75)'}"
+            }"
       >
          {{description}}
       </p>
@@ -58,11 +58,11 @@
       }
 
       p {
-         background-color: #191919;
+         background-color: #0f1012;
          position: relative;
          padding: 6vh 40px;
          font-size: .95em;
-         color: #d0d2d8;
+         color: #f6f8ff;
          transition: .3s;
          font-weight: 300;
          /*box-shadow: 3px 3px 5px 0 rgba(18, 18, 18, 0.75);*/
@@ -103,11 +103,11 @@
          display: block;
          position: relative;
          margin: 14vh auto 0 auto;
-         border-radius: 3px;
+         border-radius:1px;
          color: white;
 
          &:hover {
-            background-color: #1d1d1d !important;
+            background-color: #151618 !important;
          }
 
          &::before {
@@ -115,7 +115,7 @@
             position: absolute;
             top: 0;
             left: 0;
-            height: 1px;
+            height: 3px;
             width: 0;
             background-color: #fff;
             transition: 0.35s ease-in;
@@ -126,7 +126,7 @@
             position: absolute;
             bottom: 0;
             right: 0;
-            height: 1px;
+            height: 3px;
             width: 0;
             background-color: #fff;
             transition: 0.35s ease-in;

@@ -1,7 +1,8 @@
 <template>
    <div class="programming-content">
-      <Project :projectProperties="projects[0]" id="crm"/>
-      <Project :projectProperties="projects[1]" id="asd"/>
+      <Project :projectProperties="projects[0]" id="Tableaux"/>
+      <Project :projectProperties="projects[1]" id="Claire"/>
+      <Project :projectProperties="projects[2]" id="asd"/>
    </div>
 </template>
 
@@ -15,28 +16,75 @@
          return {
             projects: [
                {
-                  title: 'CRM System',
-                  description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. ' +
-                  'Proin nibh augue, suscipit a, scelerisque sed, lacinia in, mi. ' +
-                  'Cras vel lorem. Etiam pellentesque aliquet tellus. Phasellus pharetra nulla ac diam. ',
-                  bigImg: 'https://www.crm988.com/pic/pic2.PNG',
+                  title: 'Tableaux',
+                  description: `
+                     Tableaux means just "images". And really that's all there is to it. Nothing but images. <br/>
+                     I just used Pixabay's API to fetch the images and display it in a nice looking grid, added some basic functionality. <br/>
+                     Simple but I was interested in writing good code with React and Redux rather than making new Instagram.
+
+                  `,
+                  bigImg: '/img/tableaux/t-big.gif',
                   details: [
-                     'https://www.speedtocontact.com/wp-content/uploads/2018/05/speed-to-contact-blog-what-is-crm-system.png',
-                     'https://synergiuscrm.pl/wp-content/uploads/2017/03/CRM-proces-sprzeda%C5%BCy.-Elastyczny-CRM..png',
-                     'http://informatykawfirmie.pl/images/Grafiki/aura-pulpit.png'
+                     {
+                        img: '/img/tableaux/t-grid.png',
+                        comment: `
+                           Appreciate amazing pictures put into a simple looking grid .<br/>
+                           Search a topic that interests you and scroll down until you find what you're looking for. <br/>
+                           Then add it to favorites to be able to come back to it easily.
+                        `
+                     },
+                     {
+                        img: '/img/tableaux/t-filter.png',
+                        comment: `
+                           Filter searched images by different properties - category, color, size or style. <br/>
+                           Change the order to see some newly added images.
+                        `
+                     },
+                     {
+                        img: '/img/tableaux/t-image.png',
+                        comment: `
+                           Click an image that caught your eye. <br/>
+                           You'll be able to download it, add it to favorites, see some more information or just admire it in all its glory.
+                        `
+                     }
                   ],
 
                },
                {
-                  title: 'MOVIES',
+                  title: 'fictional-claire',
                   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. ' +
                   'Proin nibh augue, suscipit a, scelerisque sed, lacinia in, mi. ' +
                   'Cras vel lorem. Etiam pellentesque aliquet tellus. Phasellus pharetra nulla ac diam. ',
-                  bigImg: 'https://images.fastcompany.net/image/upload/w_1280,f_auto,q_auto,fl_lossy/wp-cms/uploads/2017/10/p-1-why-netflix-isnand8217t-worried-that-studios-andamp-networks-are-walking-away-1.jpg',
+                  bigImg: '/img/claire/c-big.gif',
                   details: [
-                     'https://o.aolcdn.com/images/dims?quality=85&image_uri=https%3A%2F%2Fs.aolcdn.com%2Fhss%2Fstorage%2Fmidas%2F884e68f9a829f3a26db5b729f00ccd03%2F206508290%2FEnglish.jpg&client=amp-blogside-v2&signature=953687e45abb08acfd93f2cac4c7fe66de3a9fc6',
-                     'https://filedb.experts-exchange.com/incoming/2015/06_w27/921333/Netflix.jpg',
-                     'https://i.kinja-img.com/gawker-media/image/upload/s--8TzC0OzO--/c_scale,f_auto,fl_progressive,q_80,w_800/nkk0nmfxlxp9dnofuwov.jpg',
+                     {
+                        img: '/img/claire/c-main.png'
+                     },
+                     {
+                        img: '/img/claire/c-bio.png'
+                     },
+                     {
+                        img: '/img/claire/c-res.png'
+                     },
+                  ],
+
+               },
+               {
+                  title: 'moo-v',
+                  description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. ' +
+                  'Proin nibh augue, suscipit a, scelerisque sed, lacinia in, mi. ' +
+                  'Cras vel lorem. Etiam pellentesque aliquet tellus. Phasellus pharetra nulla ac diam. ',
+                  bigImg: '/img/moov/m-big.gif',
+                  details: [
+                     {
+                        img: '/img/moov/m-main.png'
+                     },
+                     {
+                        img: '/img/moov/m-search.png'
+                     },
+                     {
+                        img: '/img/moov/m-moovie.png'
+                     },
                   ],
 
                }
@@ -50,13 +98,13 @@
 
    .programming-content {
 
-      #crm {
+      section:nth-child(odd) {
          background-color: #141414;
       }
-
-      #asd{
+      section:nth-child(even) {
          background-color: #191919;
       }
+
    }
 
 </style>

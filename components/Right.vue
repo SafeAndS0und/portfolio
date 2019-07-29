@@ -30,7 +30,7 @@
 
             sectionStatus.right
                ? this.color = '#fff'
-               : this.color = '#1d1d1d'
+               : this.color = '#151618'
          })
       },
       data(){
@@ -39,7 +39,7 @@
             description: `Music is awesome, but I would always like to keep it in the definiton of passion.
                         Programming is something different, something that I can call "work" and feel good about it.
                         Not that I don't enjoy it, but I like the distinction between programming and music.`,
-            color: '#1d1d1d',
+            color: '#151618',
 
             isActive: false
          }
@@ -71,7 +71,7 @@
    }
 
    .active {
-      background-color: #92182d;
+      background-color: #2d60dd;
       //#551D2B
 
    }

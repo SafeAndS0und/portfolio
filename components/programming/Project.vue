@@ -1,15 +1,15 @@
 <template>
    <section class="project">
       <h1>{{projectProperties.title}}</h1>
-      <p>{{projectProperties.description}}</p>
+      <p v-html="projectProperties.description"></p>
 
       <img :src="projectProperties.bigImg" class="bigImg" alt="Huge image">
 
       <div class="details">
 
          <article v-for="detail of projectProperties.details">
-            <img :src="detail" alt="small image" @click="activatePopup(detail)">
-            <p class="detail-desc">{{projectProperties.description}}</p>
+            <img :src="detail.img" alt="small image" @click="activatePopup(detail.img)">
+            <p class="detail-desc" v-html="detail.comment"></p>
          </article>
 
          <div class="popup" v-if="popupActive">
@@ -54,13 +54,15 @@
       }
 
       p {
-         margin: 25px auto;
-         width: 70%;
+         text-align: center;
+         margin: 15px auto;
+         width: 80%;
          display: block;
          font-weight: 300;
-         font-size: 0.9em;
+         font-size: 0.94em;
          color: #656767;
          padding: 15px;
+         line-height: 1.5em;
       }
 
       .bigImg {
@@ -69,7 +71,7 @@
          max-height: 500px;
          max-width: 100%;
 
-         padding: 40px 0;
+         padding: 20px 0;
          border-bottom: 1px solid #1a1a1a;
       }
 
@@ -93,6 +95,7 @@
                z-index: 135;
                transition: 0.2s;
                opacity: 0.7;
+               object-fit: cover;
 
                &:hover {
                   opacity: 1;
@@ -125,17 +128,18 @@
             div {
                width: 100%;
                height: 30px;
-               background-color: #390813;
+               background-color: #1a181b;
                text-align: center;
                line-height: 30px;
                cursor: pointer;
                color: white;
 
                &:hover{
-                  background-color: #560816;
+                  background-color: #262526;
                }
             }
             img {
+               object-fit: cover;
                max-width: 70vw;
                max-height: 70vh;
             }

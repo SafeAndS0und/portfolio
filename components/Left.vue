@@ -29,7 +29,7 @@
 
             sectionStatus.left
                ? this.color = '#ffffff'
-               : this.color = '#1d1d1d'
+               : this.color = '#151618'
          })
       },
       data(){
@@ -40,7 +40,7 @@
                         Shifting through the different genres I am now inloved in classical piano music the most.
                         But before that I was also intrigued by many others types of music - from electronic to orchestral.`,
             isActive: false,
-            color: '#1d1d1d',
+            color: '#151618',
          }
       },
       methods:{
@@ -70,6 +70,6 @@
 
    // #134883;
    .active {
-      background-color: #194fc8;
+      background-color: #4057d3;
    }
 </style>
