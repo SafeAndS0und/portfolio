@@ -3,6 +3,7 @@
       <Project :projectProperties="projects[0]" id="Tableaux"/>
       <Project :projectProperties="projects[1]" id="Claire"/>
       <Project :projectProperties="projects[2]" id="asd"/>
+      <Project :projectProperties="projects[3]" id="adfd"/>
    </div>
 </template>
 
@@ -47,6 +48,25 @@
                            You'll be able to download it, add it to favorites, see some more information or just admire it in all its glory.
                         `
                      }
+                  ],
+
+               },
+               {
+                  title: 'Corresponder',
+                  description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. ' +
+                  'Proin nibh augue, suscipit a, scelerisque sed, lacinia in, mi. ' +
+                  'Cras vel lorem. Etiam pellentesque aliquet tellus. Phasellus pharetra nulla ac diam. ',
+                  bigImg: '/img/corresponder/c-big.gif',
+                  details: [
+                     {
+                        img: '/img/corresponder/c-talk.png'
+                     },
+                     {
+                        img: '/img/corresponder/c-fold.png'
+                     },
+                     {
+                        img: '/img/corresponder/c-dark.png'
+                     },
                   ],
 
                },
