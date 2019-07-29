@@ -4,14 +4,10 @@
          My own pieces on Soundclound
       </h1>
       <p class="description">
-         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-         Nunc interdum velit nec erat pharetra, id tristique nibh condimentum.
-         In vel blandit ligula. Nullam tortor massa, vulputate interdum accumsan a, commodo eu purus.
-         Duis pulvinar consequat ligula. Praesent vel tellus eu mi consequat ultricies.
-         Curabitur pretium elit odio, a rhoncus massa convallis vitae.
-         Pellentesque sem diam, lacinia nec lectus ut, varius rhoncus velit.
-         In sed libero vestibulum, malesuada ante ut, laoreet quam. Aenean ante ipsum, tristique vitae sapien ac,
-         aliquam faucibus justo.
+         Last but not least - Soundcloud.
+         It's a place for everything else that I do which isn't the already mentioned. <br/>
+         You can expect more of my own creations in many different genres, styles and ideas. <br/>
+         I don't compose too much anymore but there are some pieces that I'm proud of to this day.
       </p>
       <div class="piece">
          <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay"

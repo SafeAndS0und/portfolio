@@ -36,10 +36,10 @@
       data(){
          return {
             title: "programming",
-            description: `Music is awesome, but I would always like to keep it in the definiton of passion.
-                        Programming is something different, something that I can call "work" and feel good about it.
-                        Not that I don't enjoy it, but I like the distinction between programming and music.`,
             color: '#151618',
+            description: `Music is awesome, but I would always like to keep it in the definiton of hobby.
+                        Programming is something different, something that I can call "work" and feel good about it.
+                        Not that I don't enjoy it, but I like the distinction between work and passion.`,
 
             isActive: false
          }

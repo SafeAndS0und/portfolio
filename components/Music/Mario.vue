@@ -4,14 +4,10 @@
          My arrangements on Marioverehrer's channel
       </h1>
       <p class="description">
-         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-         Nunc interdum velit nec erat pharetra, id tristique nibh condimentum.
-         In vel blandit ligula. Nullam tortor massa, vulputate interdum accumsan a, commodo eu purus.
-         Duis pulvinar consequat ligula. Praesent vel tellus eu mi consequat ultricies.
-         Curabitur pretium elit odio, a rhoncus massa convallis vitae.
-         Pellentesque sem diam, lacinia nec lectus ut, varius rhoncus velit.
-         In sed libero vestibulum, malesuada ante ut, laoreet quam. Aenean ante ipsum, tristique vitae sapien ac,
-         aliquam faucibus justo.
+         If you're anyhow interested in piano music you may have seen the 'falling keys' tutorials.
+         That's synthesia. <br/> It uses MIDI files to display how to play a piece. <br/>
+         I often have fun writing MIDI arrangements for a guy who has a pretty famous Youtube account - Marioverehrer. <br/>
+         He records a video of it, puts it up online for people to learn or just enjoy the music.
       </p>
 
       <div class="video">

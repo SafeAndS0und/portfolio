@@ -8,8 +8,8 @@
          :style="{
             borderColor: color,
             }"
+         v-html="description"
       >
-         {{description}}
       </p>
 
       <main-page-button class="big-butt-on"
@@ -59,6 +59,7 @@
 
       p {
          background-color: #0f1012;
+         line-height: 1.5em;
          position: relative;
          padding: 6vh 40px;
          font-size: .95em;
@@ -66,6 +67,7 @@
          transition: .3s;
          font-weight: 300;
          /*box-shadow: 3px 3px 5px 0 rgba(18, 18, 18, 0.75);*/
+         min-height: 86px;
       }
 
       .arrow {
@@ -100,10 +102,11 @@
       }
 
       .big-butt-on {
+         font-family: 'Bahnschrift', sans-serif;
          display: block;
          position: relative;
          margin: 14vh auto 0 auto;
-         border-radius:1px;
+         border: 0;
          color: white;
 
          &:hover {

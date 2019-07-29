@@ -54,7 +54,7 @@
       }
 
       p {
-         text-align: center;
+
          margin: 15px auto;
          width: 80%;
          display: block;
@@ -63,6 +63,7 @@
          color: #656767;
          padding: 15px;
          line-height: 1.5em;
+
       }
 
       .bigImg {
@@ -111,6 +112,7 @@
                font-size: 0.85em;
                padding: 15px 0;
                border-top: 1px solid #232323;
+
 
             }
          }

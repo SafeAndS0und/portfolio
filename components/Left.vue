@@ -36,9 +36,9 @@
          return {
             title: "Music",
             description: `Music was always something I loved.
-                        That's definitely my biggest interest, it always was.
-                        Shifting through the different genres I am now inloved in classical piano music the most.
-                        But before that I was also intrigued by many others types of music - from electronic to orchestral.`,
+                        That's definitely my biggest personal interest.
+                        Shifting through different genres I am now inloved in classical piano music the most.
+                        Before that I was also intrigued by many others types of music - from electronic, through metal, to orchestral.`,
             isActive: false,
             color: '#151618',
          }

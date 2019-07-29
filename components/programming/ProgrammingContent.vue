@@ -19,7 +19,7 @@
                {
                   title: 'Tableaux',
                   description: `
-                     Tableaux means just "images". And really that's all there is to it. Nothing but images. <br/>
+                     Tableaux means just "images". And really that's all there is to it. Nothing but images (of cows for example). <br/>
                      I just used Pixabay's API to fetch the images and display it in a nice looking grid, added some basic functionality. <br/>
                      Simple but I was interested in writing good code with React and Redux rather than making new Instagram.
 
@@ -30,7 +30,7 @@
                         img: '/img/tableaux/t-grid.png',
                         comment: `
                            Appreciate amazing pictures put into a simple looking grid .<br/>
-                           Search a topic that interests you and scroll down until you find what you're looking for. <br/>
+                           Search a topic that interests you and scroll down until you find what you're looking for. I recommend a cow. <br/>
                            Then add it to favorites to be able to come back to it easily.
                         `
                      },
@@ -46,6 +46,7 @@
                         comment: `
                            Click an image that caught your eye. <br/>
                            You'll be able to download it, add it to favorites, see some more information or just admire it in all its glory.
+                           <br/> Just look at this beauty.
                         `
                      }
                   ],
@@ -53,57 +54,90 @@
                },
                {
                   title: 'Corresponder',
-                  description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. ' +
-                  'Proin nibh augue, suscipit a, scelerisque sed, lacinia in, mi. ' +
-                  'Cras vel lorem. Etiam pellentesque aliquet tellus. Phasellus pharetra nulla ac diam. ',
+                  description: `
+                     Corresponder is a chatting app.
+                     This project probably concerns the most different programming areas (whole frontend and backend, webRTC) of all projects I did.
+                     <br/> So it also makes it the most complicated project I worked on. <br/>
+                     But I can't say it's the best one - almost half a year passed since I began working on it. I've learnt a lot throughout this time. `,
                   bigImg: '/img/corresponder/c-big.gif',
                   details: [
                      {
-                        img: '/img/corresponder/c-talk.png'
+                        img: '/img/corresponder/c-talk.png',
+                        comment: `Add friends and to talk to them in real time through webRTC. <br/>
+                                  You can also join different topic-rooms and discuss about a specific matter.
+                        `
                      },
                      {
-                        img: '/img/corresponder/c-fold.png'
+                        img: '/img/corresponder/c-fold.png',
+                        comment: `The sidebar folds. Not much to say about that.`
                      },
                      {
-                        img: '/img/corresponder/c-dark.png'
+                        img: '/img/corresponder/c-dark.png',
+                        comment: `It also includes dark mode - I don't want you to go blind.`
                      },
                   ],
 
                },
                {
                   title: 'fictional-claire',
-                  description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. ' +
-                  'Proin nibh augue, suscipit a, scelerisque sed, lacinia in, mi. ' +
-                  'Cras vel lorem. Etiam pellentesque aliquet tellus. Phasellus pharetra nulla ac diam. ',
+                  description: `
+                  Fictional Claire is a personal website of a classical pianist, Claire. And yes, you've guessed it - she doesn't exist irl.
+                  <br/> It's a simple website, I focused on showing my perspective on style and design which is probably not so great.
+                  <span style="font-size: 1.5em">💁‍♀</span>️
+
+
+                  `,
                   bigImg: '/img/claire/c-big.gif',
                   details: [
                      {
-                        img: '/img/claire/c-main.png'
+                        img: '/img/claire/c-main.png',
+                        comment: `Homepage.`
                      },
                      {
-                        img: '/img/claire/c-bio.png'
+                        img: '/img/claire/c-bio.png',
+                        comment: `Bio.
+                        For those who care - it's a biography of an actual pianist, <a
+                        href="https://pl.wikipedia.org/wiki/Yuja_Wang"
+                        target="_blank"
+                        style="text-decoration: none;color:#2d5747;"
+                        >
+                        Yuja Wang</a>.
+`
                      },
                      {
-                        img: '/img/claire/c-res.png'
+                        img: '/img/claire/c-res.png',
+                        comment: `
+                           It's responsive, yes I know media queries.
+                        `
                      },
                   ],
 
                },
                {
                   title: 'moo-v',
-                  description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. ' +
-                  'Proin nibh augue, suscipit a, scelerisque sed, lacinia in, mi. ' +
-                  'Cras vel lorem. Etiam pellentesque aliquet tellus. Phasellus pharetra nulla ac diam. ',
+                  description: `
+                  Moo is what cow does. V stands for Vue. Combined it gives us a "movie" which is, in fact, the subject of this project. <br/>
+                  It uses an external API to fetch some details about a movie and displays them nicely to the user. That's about it.
+                  `,
                   bigImg: '/img/moov/m-big.gif',
                   details: [
                      {
-                        img: '/img/moov/m-main.png'
+                        img: '/img/moov/m-main.png',
+                        comment: `
+                           Looks just like Netflix, right?.
+                        `
                      },
                      {
-                        img: '/img/moov/m-search.png'
+                        img: '/img/moov/m-search.png',
+                        comment: `
+                           You can also search for a specific movie. Even in non-english languages, didn't test them all, though.
+                        `
                      },
                      {
-                        img: '/img/moov/m-moovie.png'
+                        img: '/img/moov/m-moovie.png',
+                        comment: `
+                           Click a moo-v to find out its rating, release date, categories and other things you don't care about.
+                        `
                      },
                   ],
 

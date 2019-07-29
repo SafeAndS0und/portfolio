@@ -4,14 +4,9 @@
          My Youtube's piano channel
       </h1>
       <p class="description">
-         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-         Nunc interdum velit nec erat pharetra, id tristique nibh condimentum.
-         In vel blandit ligula. Nullam tortor massa, vulputate interdum accumsan a, commodo eu purus.
-         Duis pulvinar consequat ligula. Praesent vel tellus eu mi consequat ultricies.
-         Curabitur pretium elit odio, a rhoncus massa convallis vitae.
-         Pellentesque sem diam, lacinia nec lectus ut, varius rhoncus velit.
-         In sed libero vestibulum, malesuada ante ut, laoreet quam. Aenean ante ipsum, tristique vitae sapien ac,
-         aliquam faucibus justo.
+         Other than writing arrangements I like to just play some already written music.
+         I use Youtube as some kind of personal diary of the pieces that I learnt. <br/>
+         It's nothing spectacular, I'm not training profesionally or anything like that, I just like to have it all in one place.
       </p>
       <div class="video">
          <iframe
