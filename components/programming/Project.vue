@@ -1,7 +1,27 @@
 <template>
    <section class="project">
       <h1>{{projectProperties.title}}</h1>
+
       <p v-html="projectProperties.description"></p>
+
+      <div class="made-using-container">
+         <div class="made-using">
+            <article v-for="brand of projectProperties.madeUsing">
+
+               <v-icon v-if="brand.type === 'icon'" scale="2.5"
+                       :name="brand.src"
+                       class="made-using-item"
+                       :style="{color: brand.color}"/>
+
+               <h2 v-else-if="brand.type === 'text'" class="made-using-item" :style="{color: brand.color}">
+                  {{brand.text}}
+               </h2>
+
+               <img :src="brand.src" alt="Logo" v-else class="made-using-item"/>
+
+            </article>
+         </div>
+      </div>
 
       <img :src="projectProperties.bigImg" class="bigImg" alt="Huge image">
 
@@ -43,7 +63,8 @@
 <style scoped lang="scss">
 
    .project {
-      padding: 40px 15px;
+      padding: 60px 15px 40px 15px;
+      position: relative;
 
       h1 {
          text-align: center;
@@ -53,8 +74,32 @@
          letter-spacing: 1px;
       }
 
-      p {
+      .made-using-container {
+         position: absolute;
+         right: 25px;
+         top: 25px;
+         display: block;
+         width: fit-content;
+         max-width: 90%;
 
+         .made-using {
+            display: grid;
+            grid-gap: 10px;
+            grid-auto-flow: column;
+            align-items: center;
+            justify-items: center;
+
+            .made-using-item {
+               opacity: .9;
+               height: 33px;
+               font-weight: 100;
+               font-size: 1.3em;
+               margin: 0;
+            }
+         }
+      }
+
+      p {
          margin: 15px auto;
          width: 80%;
          display: block;
@@ -113,7 +158,6 @@
                padding: 15px 0;
                border-top: 1px solid #232323;
 
-
             }
          }
 
@@ -136,7 +180,7 @@
                cursor: pointer;
                color: white;
 
-               &:hover{
+               &:hover {
                   background-color: #262526;
                }
             }

@@ -18,8 +18,13 @@
             projects: [
                {
                   title: 'Tableaux',
+                  madeUsing: [
+                     {type: 'icon', src: 'brands/react', color: "#3187ff"},
+                     {type: 'image', src: 'https://raw.githubusercontent.com/reduxjs/redux/master/logo/logo.png' },
+                     {type: 'image', src: 'https://sass-lang.com/assets/img/logos/logo-b6e1ef6e.svg' }
+                     ],
                   description: `
-                     Tableaux means just "images". And really that's all there is to it. Nothing but images (of cows for example). <br/>
+                     Tableaux is a fancy french word for "images". And really that's all there is to it. Nothing but images (of cows for example). <br/>
                      I just used Pixabay's API to fetch the images and display it in a nice looking grid, added some basic functionality. <br/>
                      Simple but I was interested in writing good code with React and Redux rather than making new Instagram.
 
@@ -30,7 +35,7 @@
                         img: '/img/tableaux/t-grid.png',
                         comment: `
                            Appreciate amazing pictures put into a simple looking grid .<br/>
-                           Search a topic that interests you and scroll down until you find what you're looking for. I recommend a cow. <br/>
+                           Search a topic that interests you and scroll down until you find what you're looking for. <br/>
                            Then add it to favorites to be able to come back to it easily.
                         `
                      },
@@ -54,11 +59,21 @@
                },
                {
                   title: 'Corresponder',
+                  madeUsing: [
+                     {type: 'image', src: 'https://nodejs.org/static/images/logo.svg' },
+                     {type: 'text', text: 'Express.js', color: "#beb8c1" },
+                     {type: 'image', src: 'http://pluspng.com/img-png/logo-mongodb-png-mongodb-1600.png' },
+                     {type: 'image', src: 'https://www.3cx.pl/wp-content/uploads/sites/23/webrtc-logo.png' },
+                     {type: 'icon', src: 'brands/vuejs', color: "#369e49"},
+                     {type: 'text', text: 'Vuex', color: "#7bc2a1"}
+                  ],
                   description: `
                      Corresponder is a chatting app.
                      This project probably concerns the most different programming areas (whole frontend and backend, webRTC) of all projects I did.
                      <br/> So it also makes it the most complicated project I worked on. <br/>
-                     But I can't say it's the best one - almost half a year passed since I began working on it. I've learnt a lot throughout this time. `,
+                     But I can't say it's the best one - almost half a year passed since I began working on it. I've learnt a lot throughout this time. <br/>
+                     Sadly, I couldn't get it to work with webRTC on hosting but I guess you can try downloading the repo locally.
+                      `,
                   bigImg: '/img/corresponder/c-big.gif',
                   details: [
                      {
@@ -80,6 +95,10 @@
                },
                {
                   title: 'fictional-claire',
+                  madeUsing: [
+                     {type: 'icon', src: 'brands/vuejs', color: "#369e49"},
+                     {type: 'image', src: 'https://sass-lang.com/assets/img/logos/logo-b6e1ef6e.svg' }
+                  ],
                   description: `
                   Fictional Claire is a personal website of a classical pianist, Claire. And yes, you've guessed it - she doesn't exist irl.
                   <br/> It's a simple website, I focused on showing my perspective on style and design which is probably not so great.
@@ -115,6 +134,10 @@
                },
                {
                   title: 'moo-v',
+                  madeUsing: [
+                     {type: 'icon', src: 'brands/vuejs', color: "#369e49"},
+                     {type: 'image', src: 'https://sass-lang.com/assets/img/logos/logo-b6e1ef6e.svg' }
+                  ],
                   description: `
                   Moo is what cow does. V stands for Vue. Combined it gives us a "movie" which is, in fact, the subject of this project. <br/>
                   It uses an external API to fetch some details about a movie and displays them nicely to the user. That's about it.
