@@ -7,6 +7,7 @@
                :color="color"
                position="after"
                :active="isActive"
+               btn-text="See my projects"
                @buttonClicked="changeFocus"
       />
 

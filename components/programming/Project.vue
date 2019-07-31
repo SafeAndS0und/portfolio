@@ -1,7 +1,25 @@
 <template>
    <section class="project">
-      <h1>{{projectProperties.title}}</h1>
 
+      <div class="references">
+
+         <a :href="projectProperties.liveURL" v-if="projectProperties.liveURL" target="_blank">
+            <div class="live">
+               <p>See it runnin'</p>
+               <v-icon scale="1.7" name="desktop"/>
+            </div>
+         </a>
+
+         <a :href="projectProperties.githubURL" target="_blank">
+            <div class="github">
+               <p>See on Github</p>
+               <v-icon scale="1.8" name="brands/github"/>
+            </div>
+         </a>
+
+      </div>
+
+      <h1>{{projectProperties.title}}</h1>
       <p v-html="projectProperties.description"></p>
 
       <div class="made-using-container">
@@ -63,8 +81,45 @@
 <style scoped lang="scss">
 
    .project {
-      padding: 60px 15px 40px 15px;
+      padding: 60px 15px;
       position: relative;
+
+      .references {
+         position: absolute;
+         top: 0;
+         right: 0;
+         display: grid;
+         grid-auto-flow: column;
+
+         a {
+            text-decoration: none;
+         }
+
+         .github, .live {
+            display: grid;
+            grid-auto-flow: column;
+            align-items: center;
+            padding: 6px 15px;
+            opacity: .7;
+            transition: .3s;
+            cursor: pointer;
+
+            &:hover {
+               background-color: #1e1f22;
+               opacity: 1;
+            }
+
+            p {
+               margin: 0;
+               color: #a6a6a6;
+            }
+
+            svg {
+               color: #707070;
+               transform: translateY(-2px);
+            }
+         }
+      }
 
       h1 {
          text-align: center;
@@ -77,7 +132,7 @@
       .made-using-container {
          position: absolute;
          right: 25px;
-         top: 25px;
+         bottom: 25px;
          display: block;
          width: fit-content;
          max-width: 90%;

@@ -6,6 +6,7 @@
                :description="description"
                :color="color"
                :active="isActive"
+               btn-text="Listen to my works"
                @buttonClicked="changeFocus"
       />
 

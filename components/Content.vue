@@ -15,6 +15,7 @@
       <main-page-button class="big-butt-on"
                         :class="{active: active}"
                         :bg-color="color"
+                        :text="btnText"
                         @click.native="btnClicked"/>
 
       <transition name="showArrow">
@@ -29,8 +30,16 @@
 
    export default {
       name: "Content",
-      props: ['active', 'title', 'description', 'position', 'color'],
+      props: ['active', 'title', 'description', 'position', 'color', 'btnText'],
       components: {MainPageButton},
+      data() {
+         return {
+            window: null
+         }
+      },
+      beforeMount() {
+         this.window = window
+      },
       computed: {
          isLeft(){
             return this.position !== 'after'
@@ -39,6 +48,7 @@
       methods: {
          btnClicked(){
             this.$emit('buttonClicked')
+            this.window.scrollTo(0, 0)
          }
       }
    }

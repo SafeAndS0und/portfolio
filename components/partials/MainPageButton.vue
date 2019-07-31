@@ -1,10 +1,10 @@
 <template>
-    <button :style="{borderColor: bgColor}">Click for more</button>
+    <button :style="{borderColor: bgColor}">{{text}}</button>
 </template>
 
 <script>
    export default {
-      props: ['bgColor'],
+      props: ['bgColor', 'text'],
       name: "MainPageButton"
    }
 </script>

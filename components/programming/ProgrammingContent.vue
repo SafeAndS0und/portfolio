@@ -18,6 +18,8 @@
             projects: [
                {
                   title: 'Tableaux',
+                  githubURL: "https://github.com/SafeAndS0und/Tableaux",
+                  liveURL: "https://safeands0und.github.io/Tableaux/",
                   madeUsing: [
                      {type: 'icon', src: 'brands/react', color: "#3187ff"},
                      {type: 'image', src: 'https://raw.githubusercontent.com/reduxjs/redux/master/logo/logo.png' },
@@ -59,6 +61,8 @@
                },
                {
                   title: 'Corresponder',
+                  githubURL: "https://github.com/SafeAndS0und/Corresponder",
+                  liveURL: null,
                   madeUsing: [
                      {type: 'image', src: 'https://nodejs.org/static/images/logo.svg' },
                      {type: 'text', text: 'Express.js', color: "#beb8c1" },
@@ -95,6 +99,8 @@
                },
                {
                   title: 'fictional-claire',
+                  githubURL: "https://github.com/SafeAndS0und/Fictional-Claire",
+                  liveURL: "https://safeands0und.github.io/Fictional-Claire/",
                   madeUsing: [
                      {type: 'icon', src: 'brands/vuejs', color: "#369e49"},
                      {type: 'image', src: 'https://sass-lang.com/assets/img/logos/logo-b6e1ef6e.svg' }
@@ -116,7 +122,7 @@
                         img: '/img/claire/c-bio.png',
                         comment: `Bio.
                         For those who care - it's a biography of an actual pianist, <a
-                        href="https://pl.wikipedia.org/wiki/Yuja_Wang"
+                        href="https://en.wikipedia.org/wiki/Yuja_Wang"
                         target="_blank"
                         style="text-decoration: none;color:#2d5747;"
                         >
@@ -134,6 +140,8 @@
                },
                {
                   title: 'moo-v',
+                  githubURL: "https://github.com/SafeAndS0und/moo-v",
+                  liveURL: "https://safeands0und.github.io/moo-v/",
                   madeUsing: [
                      {type: 'icon', src: 'brands/vuejs', color: "#369e49"},
                      {type: 'image', src: 'https://sass-lang.com/assets/img/logos/logo-b6e1ef6e.svg' }
