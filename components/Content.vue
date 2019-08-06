@@ -19,7 +19,7 @@
                         @click.native="btnClicked"/>
 
       <transition name="showArrow">
-         <v-icon name="arrow-down" class="arrow" v-if="active" scale="3"/>
+         <v-icon name="arrow-down" class="arrow" v-if="active" scale="3" @click.native="scrollDown"/>
       </transition>
    </div>
 </template>
@@ -46,6 +46,13 @@
          }
       },
       methods: {
+         scrollDown(){
+            window.scrollBy({
+               top: this.window.innerHeight,
+               left: 0,
+               behavior: 'smooth'
+            });
+         },
          btnClicked(){
             this.$emit('buttonClicked')
             this.window.scrollTo(0, 0)

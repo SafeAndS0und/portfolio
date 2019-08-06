@@ -2,7 +2,10 @@ const pkg = require('./package')
 
 
 module.exports = {
-   mode: 'universal',
+   mode: 'spa',
+   router: {
+      base: '/portfolio/'
+   },
 
    /*
    ** Headers of the page

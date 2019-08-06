@@ -27,9 +27,10 @@
                  src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/274443808&color=%230a0a1d&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
       </div>
 
-      <v-icon name="brands/soundcloud" scale="5"
-              class="icon"/>
-
+      <a href="https://soundcloud.com/safeandsound2134" target="_blank">
+         <v-icon name="brands/soundcloud" scale="5"
+                 class="icon"/>
+      </a>
    </section>
 </template>
 
@@ -57,13 +58,14 @@
       }
 
       .description {
-         margin: 25px auto;
-         padding: 15px;
+         margin: 15px auto;
          width: 70%;
          display: block;
-         font-size: 0.9em;
          font-weight: 300;
-         color: #676463;
+         font-size: 0.94em;
+         color: #656767;
+         padding: 15px;
+         line-height: 1.5em;
       }
 
       .piece {

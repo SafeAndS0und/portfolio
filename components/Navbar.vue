@@ -1,13 +1,13 @@
 <template>
 
    <nav :style="{backgroundColor: YOffset >= 60 ? '#111111' : 'transparent'}">
-      <h1>nikodem lorenz</h1>
+      <h1 @click="resetSections">nikodem lorenz</h1>
 
       <Burger class="burger" @click.native="toggleMenu" :showMenu="showMenu"/>
 
       <transition name="fade">
          <div class="menu" v-if="showMenu" @click.native="toggleMenu">
-            <nuxt-link to="#">About</nuxt-link>
+            <nuxt-link to="#">Resume</nuxt-link>
             <nuxt-link to="#">Contact</nuxt-link>
          </div>
       </transition>
@@ -18,7 +18,7 @@
 
 <script>
    import Burger from '../assets/svg/Burger_icon.vue'
-
+   import EventBus from '../assets/js/EventBus'
 
    export default {
       name: "navbar",
@@ -42,6 +42,13 @@
       methods: {
          toggleMenu(){
             this.showMenu = !this.showMenu
+         },
+         resetSections() {
+            this.$emit('resetSections')
+            EventBus.$emit('togglingSections', {
+               left: false,
+               right: false
+            })
          }
       }
    }
@@ -71,6 +78,7 @@
          font-weight: 600;
          letter-spacing: 3px;
          font-size: 1.8em;
+         cursor: pointer;
       }
 
       .burger {

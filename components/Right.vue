@@ -59,6 +59,8 @@
    .right {
       position: relative;
       transition: background-color 0.5s;
+      padding: 0;
+      margin: 0;
 
       .content {
          margin: auto;
@@ -72,8 +74,10 @@
    }
 
    .active {
-      background-color: #2d60dd;
+      background-color: #3461d1;
       //#551D2B
+      padding: 0;
+      margin: 0;
 
    }
 

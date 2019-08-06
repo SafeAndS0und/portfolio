@@ -1,6 +1,6 @@
 <template>
    <div class="container">
-      <Navbar class="nav"/>
+      <Navbar class="nav" @resetSections="resetSections"/>
       <main>
          <Left class="left"
                :class="{a_left: isActiveLeft, d_left: isActiveRight}"
@@ -30,6 +30,10 @@
          }
       },
       methods: {
+         resetSections() {
+            this.isActiveRight = false
+            this.isActiveLeft = false
+         },
          toggleLeft(){
             this.isActiveLeft = !this.isActiveLeft
             this.isActiveRight = false
@@ -152,7 +156,6 @@
                left: 0;
                width: 100%;
                transition: 0.6s;
-               padding-bottom: 50px;
 
                &::-webkit-scrollbar {
                   width: 0 !important;

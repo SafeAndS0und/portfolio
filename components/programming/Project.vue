@@ -6,14 +6,14 @@
          <a :href="projectProperties.liveURL" v-if="projectProperties.liveURL" target="_blank">
             <div class="live">
                <p>See it runnin'</p>
-               <v-icon scale="1.7" name="desktop"/>
+               <v-icon scale="1.5" name="desktop"/>
             </div>
          </a>
 
          <a :href="projectProperties.githubURL" target="_blank">
             <div class="github">
                <p>See on Github</p>
-               <v-icon scale="1.8" name="brands/github"/>
+               <v-icon scale="1.6" name="brands/github"/>
             </div>
          </a>
 
@@ -26,7 +26,7 @@
          <div class="made-using">
             <article v-for="brand of projectProperties.madeUsing">
 
-               <v-icon v-if="brand.type === 'icon'" scale="2.5"
+               <v-icon v-if="brand.type === 'icon'" scale="2.25"
                        :name="brand.src"
                        class="made-using-item"
                        :style="{color: brand.color}"/>
@@ -80,9 +80,15 @@
 
 <style scoped lang="scss">
 
+   @import '../../assets/css/variables.scss';
+
    .project {
       padding: 60px 15px;
       position: relative;
+
+      @media (max-width: $tablet) {
+         padding: 60px 6px;
+      }
 
       .references {
          position: absolute;
@@ -90,6 +96,11 @@
          right: 0;
          display: grid;
          grid-auto-flow: column;
+
+         @media (max-width: $tablet) {
+            width: 100%;
+            grid-template-columns: 1fr 1fr;
+         }
 
          a {
             text-decoration: none;
@@ -99,10 +110,11 @@
             display: grid;
             grid-auto-flow: column;
             align-items: center;
-            padding: 6px 15px;
+            padding: 6px 12px;
             opacity: .7;
             transition: .3s;
             cursor: pointer;
+
 
             &:hover {
                background-color: #1e1f22;
@@ -112,6 +124,7 @@
             p {
                margin: 0;
                color: #a6a6a6;
+               font-size: .9em;
             }
 
             svg {
@@ -144,12 +157,22 @@
             align-items: center;
             justify-items: center;
 
+            @media (max-width: $tablet) {
+               grid-gap: 5px;
+            }
+
             .made-using-item {
+               @media (max-width: $tablet) {
+                  transform: scale(.9);
+               }
+
                opacity: .9;
-               height: 33px;
+               height: 28px;
                font-weight: 100;
                font-size: 1.3em;
                margin: 0;
+
+
             }
          }
       }
@@ -163,6 +186,10 @@
          color: #656767;
          padding: 15px;
          line-height: 1.5em;
+
+         @media (max-width: $tablet) {
+            width: 90%;
+         }
 
       }
 

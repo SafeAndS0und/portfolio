@@ -5,26 +5,28 @@
          "port": 3000
       }
    },
-  "name": "portfolio",
-  "version": "1.0.0",
-  "description": "Simple, aiming-to-be-pretty portfolio using Nuxt.js ",
-  "author": "Nikodem Lorenz",
-  "private": true,
-  "scripts": {
-    "dev": "nuxt",
-    "build": "nuxt build",
-    "start": "nuxt start",
-    "generate": "nuxt generate"
-  },
-  "dependencies": {
-    "@nuxtjs/pwa": "^2.6.0",
-    "cross-env": "^5.2.0",
-    "nuxt": "^2.4.0",
-    "vue-awesome": "^3.3.1"
-  },
-  "devDependencies": {
-    "node-sass": "^4.11.0",
-    "nodemon": "^1.18.9",
-    "sass-loader": "^7.1.0"
-  }
+   "name": "portfolio",
+   "version": "1.0.0",
+   "description": "Simple, aiming-to-be-pretty portfolio using Nuxt.js ",
+   "author": "Nikodem Lorenz",
+   "private": true,
+   "scripts": {
+      "dev": "nuxt",
+      "build": "nuxt build",
+      "start": "nuxt start",
+      "generate": "nuxt generate",
+      "deploy": "gh-pages -d dist --git git"
+   },
+   "dependencies": {
+      "@nuxtjs/pwa": "^2.6.0",
+      "cross-env": "^5.2.0",
+      "nuxt": "^2.4.0",
+      "vue-awesome": "^3.3.1"
+   },
+   "devDependencies": {
+      "gh-pages": "^2.1.0",
+      "node-sass": "^4.11.0",
+      "nodemon": "^1.18.9",
+      "sass-loader": "^7.1.0"
+   }
 }

@@ -6,7 +6,8 @@
       <p class="description">
          Other than writing arrangements I like to just play some already written music.
          I use Youtube as some kind of personal diary of the pieces that I learnt. <br/>
-         It's nothing spectacular, I'm not training profesionally or anything like that, I just like to have it all in one place.
+         It's nothing spectacular, I'm not training profesionally or anything like that, I just like to have it all in
+         one place.
       </p>
       <div class="video">
          <iframe
@@ -28,8 +29,10 @@
          </iframe>
       </div>
 
-      <v-icon name="brands/youtube" scale="5"
-              class="icon"/>
+      <a href="https://www.youtube.com/user/NikiL2134/videos" target="_blank">
+         <v-icon name="brands/youtube" scale="5"
+                 class="icon"/>
+      </a>
 
 
    </section>
@@ -68,13 +71,14 @@
       }
 
       .description {
-         margin: 25px auto;
-         padding: 15px;
+         margin: 15px auto;
          width: 70%;
          display: block;
-         font-size: 0.9em;
          font-weight: 300;
-         color: #676463;
+         font-size: 0.94em;
+         color: #656767;
+         padding: 15px;
+         line-height: 1.5em;
       }
 
       .video {
