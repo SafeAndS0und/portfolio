@@ -8,7 +8,7 @@
       <transition name="fade">
          <div class="menu" v-if="showMenu" @click.native="toggleMenu">
             <nuxt-link to="#">Resume</nuxt-link>
-            <nuxt-link to="#">Contact</nuxt-link>
+            <nuxt-link to="/contact">Contact</nuxt-link>
          </div>
       </transition>
 
@@ -44,6 +44,7 @@
             this.showMenu = !this.showMenu
          },
          resetSections() {
+            this.$router.push('/')
             this.$emit('resetSections')
             EventBus.$emit('togglingSections', {
                left: false,
