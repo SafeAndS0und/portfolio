@@ -75,10 +75,9 @@
       }
 
       p {
-         background-color: #0f1012;
          line-height: 1.5em;
          position: relative;
-         padding: 6vh 40px;
+         padding: 6vh 18px;
          font-size: .95em;
          color: #f6f8ff;
          transition: .3s;

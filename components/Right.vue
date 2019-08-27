@@ -74,7 +74,7 @@
    }
 
    .active {
-      background-color: #3461d1;
+      background-color: #415aed;
       //#551D2B
       padding: 0;
       margin: 0;

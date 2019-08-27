@@ -71,6 +71,6 @@
 
    // #134883;
    .active {
-      background-color: #4057d3;
+      background-color: #415aed;
    }
 </style>

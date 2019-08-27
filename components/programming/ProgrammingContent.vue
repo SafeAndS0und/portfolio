@@ -60,6 +60,48 @@
 
                },
                {
+                  title: 'totallynotspotify',
+                  githubURL: "https://github.com/SafeAndS0und/totallynotspotify",
+                  liveURL: "https://safeands0und.github.io/totallynotspotify/",
+                  madeUsing: [
+                     {type: 'icon', src: 'brands/react', color: "#3187ff"},
+                     {type: 'image', src: 'https://raw.githubusercontent.com/reduxjs/redux/master/logo/logo.png' },
+                     {type: 'image', src: 'https://sass-lang.com/assets/img/logos/logo-b6e1ef6e.svg' }
+                  ],
+                  description: `
+                     With "totallynotspotify" I was primarily aiming for a pleasing visual impression. <br/>
+                     That why I was shamelessly stealing Spotify's design and some other dribbble ideas.
+                     I'm not a graphic designer - I gathered. <br/>
+                     Well it also works. And I think it works really well.
+                     I didn't plan it to, so in the end it doesn't use any state management solution except for simple props, custom hooks and components.
+                     It's still just a demo, many things could have been done better.
+                  `,
+                  bigImg: '/portfolio/img/spotify/t-big.gif',
+                  details: [
+                     {
+                        img: '/portfolio/img/spotify/t-whole.png',
+                        comment: `
+                           I'm really satisfied with the general visual result. <br/>
+                        `
+                     },
+                     {
+                        img: '/portfolio/img/spotify/t-mobile.png',
+                        comment: `
+                           I won't lie, it's pretty cumbersome on mobile devices. <br/>
+                           It's usable, though. : ]
+                        `
+                     },
+                     {
+                        img: '/portfolio/img/spotify/t-close.png',
+                        comment: `
+                           I like the list specifically. <br/>
+                           It's just really elegant but modern at the same time.
+                        `
+                     }
+                  ],
+
+               },
+               {
                   title: 'Corresponder',
                   githubURL: "https://github.com/SafeAndS0und/Corresponder",
                   liveURL: null,
